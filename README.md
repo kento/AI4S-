@@ -10,6 +10,9 @@ users who passed the expert control screening.
 The system is provisioned alongside [Fugaku](https://github.com/RIKEN-RCCS/Fugaku)
 to give users a continuum of CPU-optimized HPC and GPU-accelerated AI workloads.
 
+**Virtual Fugaku Frontend** enables interactive access, script development, and visualization —
+all AI/ML software and specifications are packaged in this unified environment for reproducibility.
+
 > **Status:** This page is under active development; sections marked _TBA_ will
 > be populated as procurement progresses and operational documentation matures.
 
@@ -18,6 +21,7 @@ to give users a continuum of CPU-optimized HPC and GPU-accelerated AI workloads.
 ## Table of Contents
 
 - [Overview](#overview)
+- [Schedule & Access](#schedule--access)
 - [System Pipeline](#system-pipeline)
 - [Compute Node](#compute-node)
 - [Hardware Specifications](#hardware-specifications)
@@ -66,6 +70,33 @@ The full system topology — compute, front-end, interconnect, and shared filesy
 [SVG source](docs/figures/system_pipeline.svg)
 
 ---
+
+---
+
+## Schedule & Access
+
+The system is being deployed in phases tied to the JST ARiSE (AI for Science Innovative
+Research Promotion) call cycle:
+
+### **Early Access / Pre-Production Phase**
+- **Timing:** Available concurrent with ARiSE call release
+- **Free/Low-cost trial accounts:** Offered to ARiSE proposal submitters
+- **Rikyu access:** Open to RIKEN staff and Japanese domestic researchers (no exclusions)
+- **RiVault (AI Inference Gateway):** Experimental deployment (initially RIKEN network-only)
+- **Limited nodes:** Trial run at reduced scale; full deployment during GA
+
+### **General Availability (GA) Phase**
+- **Timing:** Timeline TBD; incremental rollout expected
+- **RiVault:** Transitioned to production; widely available  
+- **Full system resources:** All compute nodes available
+- **Standard pricing:** ¥300/GPU·hour (subject to revision)
+
+### **Important Notices**
+- **Schedule subject to change** — timelines are provisional
+- **Pre-prod → Production transition:** Software may be updated/deprecated; user data
+  retention is TBD (early-stage data may not be preserved)
+- **Community-first approach:** Emphasis on inclusive access rather than competitive advantage
+
 
 ## Compute Node
 
@@ -234,6 +265,11 @@ system; it provides a WebUI, API endpoints (liteLLM), MCP servers, RAG
 See **[RIKEN-RCCS/RiVault](https://github.com/RIKEN-RCCS/RiVault)** for
 architecture, access methods, and getting-started instructions.
 
+### Deployment Timeline
+
+- **Pre-Production Phase:** Experimental deployment (RIKEN network access only)
+- **Production Phase:** Widely available via public API / WebUI endpoints
+
 ![RiVault architecture (preview)](docs/figures/RiVault.png)
 
 ---
@@ -266,10 +302,12 @@ architecture, access methods, and getting-started instructions.
 
 ## Support / Contact
 
-- E-mail: `rccs-ai4s-support@ml.riken.jp`
-- Issue tracker: this repository's
-  [Issues](https://github.com/RIKEN-RCCS/Rikyu/issues)
-  (please do not file confidential information here).
+- **Initial stage:** [Issue Tracker](https://github.com/RIKEN-RCCS/AI-for-Science-Supercomputer/issues)
+  (public technical discussions; do not file confidential information)
+- **Production stage:** AI-based support via
+  [AskDona](https://www.r-ccs.riken.jp/outreach/topics/20250711-1/)
+  — unified support for Rikyu (AI for Science) and Fugaku
+- **Email:** `rccs-ai4s-support@ml.riken.jp`
 
 ---
 
@@ -282,4 +320,4 @@ architecture, access methods, and getting-started instructions.
 
 ---
 
-_Last updated: 2026-04-29._
+_Last updated: 2026-04-30._
